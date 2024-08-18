@@ -1,0 +1,83 @@
+.type-box{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.6);
+    animation: slideDown 0.5s ease-out forwards;
+}
+@keyframes slideDown {
+    from{
+        top : -100px;
+        
+    }
+    to{
+        top :0;
+    }
+}
+
+
+.pokemon-types{
+    margin-top: 20px;
+   
+}
+.grass,.fire,.water,.flying,.poison,.bug,.normal,.electric,.ground,.fairy,.psychic,.ice,.ghost,.dark,.rock,.fighting,.dragon,.steel{
+   
+    color: #fff;
+}
+.grass{
+    background-color: rgba(56, 172, 56, 0.974);
+}
+.fire{
+    background-color: orange;
+}
+.water{
+    background-color: rgb(49, 190, 233);
+}
+.flying{
+    background-color: cadetblue;
+}
+.poison{
+    background-color: blueviolet;
+}
+.psychic{
+    background-color: dimgray;
+}
+.bug{
+    background-color: rgb(216, 176, 254);
+}
+.normal{
+    background-color: rgb(255, 216, 59);
+}
+.electric{
+    background-color: rgb(223, 223, 53);
+}
+.ground{
+    background-color: rgb(123, 47, 47);
+}
+.fairy{
+    background-color: rgb(226, 210, 177);
+}
+.ice{
+    background-color: skyblue;
+}
+.ghost{
+    background-color: purple;
+}
+.dark{
+    background-color: rgb(50, 45, 45);
+}
+.rock{
+    background-color: rgb(199, 126, 31);
+}
+.fighting{
+    background-color: rgb(104, 85, 56);
+}
+.dragon{
+    background-color: grey;
+}
+.steel{
+    background-color: rgb(143, 141, 141);
+}

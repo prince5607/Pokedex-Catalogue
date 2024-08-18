@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/externalStyles.css">
+    <link rel="stylesheet" href="./css/intrenalStyles.css">
+    <link rel="stylesheet" href="./css/pokemonTypes.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <title>MyPokedex</title>
+</head>
+<body>
+    
+    <div class="pokedex" id="pokedex">
+        <div class="pokeTop">
+            <div class="pokeball-top"></div>
+        </div>
+        <div class="pokeDown">
+            <div class="pokeball-down"></div>
+        </div>
+        <button class="button" id="button" ></button>
+        <div class="internal-functions">     
+            <div class="upper-section">
+                <div class="indicator">
+                    <div class="bulb"></div>
+                </div>
+                <div class="display">
+                 <div class="disp-outer-layer"></div>
+                </div>
+                <div class="menu">  
+                    <i class="menuBtn bx bx-menu bx-sm"></i>
+                    </div>
+                    <div class="menu-options">
+                        <div>
+                         <input type="text" name ="pokeSearch" class="pokeSearch" id="pokeSearch" placeholder="Search Pokemon">
+                         <button  class="searchButt" id="searchBtn"><i class='bx bx-search-alt-2'></i></button>
+                         <button class="powerButtn" id="powerBtn">
+                            <i class='bx bx-power-off'></i>
+                        </div>
+                     </div>
+                
+            </div>
+            <div class="lower-section">
+                <div class="lower-left">
+                   
+                </div>
+                <div class="lower-right" >
+                    <input type="text" name ="pokeSearch" class="pokeSearch" id="pokeSrch" placeholder="Search Pokemon">
+                         <button  class="searchButt" id="srchBtn"><i class='bx bx-search-alt-2'></i></button>
+                    <div class="more-options">
+                        <button class="voice-btn" id="voice-btn">
+                            <i class='bx bxs-microphone'></i>
+                        </button>
+                        <button class="powerButtn" id="powerButtn">
+                        <i class='bx bx-power-off'></i>
+                    </button></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script  src="./js/script.js"></script>
+</body>
+</html>

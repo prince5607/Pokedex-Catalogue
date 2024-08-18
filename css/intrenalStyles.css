@@ -1,0 +1,220 @@
+body{
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+.internal-functions{
+    display: flex;
+    justify-content: center;
+    
+    width: 98%;
+    height: 98%;
+}
+.upper-section{
+    
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 98%; /*585px */
+    grid-template-rows: 60px;
+    width: 98%;
+    height: 52%;
+    margin-top: 5px;
+}
+.lower-section{
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 5px;
+    justify-content: center;
+    
+    height: 48%;
+    width: 98%;
+}
+.indicator{
+   
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 5px 1px;
+   
+
+   
+}
+.bulb{
+    background-color: rgb(3, 246, 246);
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 98%;
+}
+.lower-left , .lower-right{
+    background-color: rgba(232, 232, 232, 0.96);
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 92%;
+    overflow-y: auto;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.pokeSearch{
+    margin: 80px 0 0 15px;
+    border: 2px solid black;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+}
+.searchButt{
+    color: #fff;
+    font-size: 20px;
+    
+    background-color: rgb(9, 255, 9);
+    height: 50px;
+    width: 50px;
+    margin: 4px 0 0 42%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.searchButt:hover {
+    background-color: rgba(9, 255, 9, 0.2);
+}
+.powerButtn,.voice-btn{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius:  50%;
+   
+    cursor: pointer;
+}
+.powerButtn{
+    right: 0;
+}
+.powerButtn:hover,.voice-btn:hover{
+    background-color: rgba(255, 67, 67, 0.8);
+}
+
+.pokemon-name{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    background-color: #fff;
+    margin: 5px;
+    /* border: 2px solid black;  */
+    padding: 5px;
+    box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+    
+.pokemon-img{  
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pokemon-desc{
+    display: grid;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+    
+    animation: slide-up 0.5s ease-out forwards; 
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(50px); 
+    }
+    to {
+        transform: translateY(0); 
+    }
+}
+
+
+.desc-content{
+   text-align: center;
+ 
+   height: 100px;
+   width: 17vw;
+   background-color: rgb(250, 246, 215);
+   border-radius: 10px;
+   overflow-y: auto;
+   overflow-x: auto;
+   box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+.poke-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 50px 0 0 50px;
+}
+
+.poke-disp{
+    display: grid;
+    grid-template-columns: auto auto ;
+    height: 96%;
+    width: 96%;
+}
+
+.disp-outer-layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Design_plat_Pok%C3%A9ball.svg/256px-Design_plat_Pok%C3%A9ball.svg.png?20190707060415");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-color: whitesmoke;
+    height: 96%;
+    width: 98%;
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+.more-options{
+    position: absolute;
+    
+    height: 50px;
+    width: 270px;
+   bottom: 20px;
+    margin-left: 8px;
+}
+.menu{
+    display: none;
+    justify-self: center;
+    border: 2px solid black;
+    padding: 4px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(185, 0, 0);
+}
+.menu-options{
+    display: none;
+    justify-self: center;
+    position: absolute;
+    height: auto;
+    width: 300px;
+    background-color: rgb(255, 55, 55);
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-direction: column;
+    top: 100%;
+}
