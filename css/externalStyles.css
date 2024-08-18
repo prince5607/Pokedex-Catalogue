@@ -12,14 +12,14 @@ body {
     position: relative;
     width: 38rem;
     height: 100%;
-    background-color: rgb(255, 55, 55);
+    background-color: rgb(255, 72, 72);
     border: 5px solid #000;
     border-radius: 25px;
     
     overflow: hidden;
   }
   .pokeTop , .pokeDown{
-    background-color: rgb(255, 55, 55);
+    background-color: rgb(255, 72, 72);
     position: absolute;
     display: flex;
     height: 50%;
