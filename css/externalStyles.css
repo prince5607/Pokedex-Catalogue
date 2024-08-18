@@ -70,7 +70,7 @@ body {
     z-index: 10;
     cursor: pointer;
   }
-  .button:focus{
+  .button:active{
     outline: none;
   }
   .open .pokeTop {
