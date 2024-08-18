@@ -70,7 +70,9 @@ body {
     z-index: 10;
     cursor: pointer;
   }
-
+  .button:focus{
+    outline: none;
+  }
   .open .pokeTop {
     transform: translateY(-100%);
   }
