@@ -20,7 +20,7 @@ var pokeDex = {};  //{1 : {name : , type: , img: , desc: ,animation: }}
 
 window.onload = async function () {
     let html = "";
-    for (let i = 1; i <= 150; i++) {
+    for (let i = 1; i <= 500; i++) {
         await getPokemon(i);
 
         let pokemon = document.createElement("div");
